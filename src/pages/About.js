@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 const About = () => {
   //   const location = useLocation();
@@ -13,7 +13,7 @@ const About = () => {
 
   const onIncreaseMode = () => {
     const nextMode = mode === null ? 1 : parseInt(mode) + 1;
-    searchParams({ mode: nextMode, detail });
+    setSearchParams({ mode: nextMode, detail });
   };
   return (
     <div>
